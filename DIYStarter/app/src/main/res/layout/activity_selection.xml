@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:paddingBottom="@dimen/selection_activity_bottom">
+
+    <Button
+        android:id="@+id/selection_activity_myprojects_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/selection_activity_friends_btn"
+        android:text="@string/btn_my_projects"
+        android:layout_marginLeft="@dimen/selection_activity_btn_side"
+        android:layout_marginRight="@dimen/selection_activity_btn_side"
+        android:enabled="false"
+        android:onClick="onMyProjectsClick"
+        />
+
+    <Button
+        android:id="@+id/selection_activity_friends_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/btn_friends_projects"
+        android:layout_marginLeft="@dimen/selection_activity_btn_side"
+        android:layout_marginRight="@dimen/selection_activity_btn_side"
+        android:enabled="false"
+        android:onClick="onFriendsProjectsClick"
+        />
+</RelativeLayout>

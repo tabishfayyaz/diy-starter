@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    >
+
+    <EditText
+        android:id="@+id/activity_comments_inputbox"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/activity_comments_inputbox_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/activity_comments_inputbox_padding"
+        android:layout_marginBottom="@dimen/activity_comments_inputbox_margin"
+        android:layout_marginLeft="@dimen/activity_comments_inputbox_margin"
+        android:background="@color/input_box_bg"
+        android:layout_toLeftOf="@+id/activity_comment_post_btn"/>
+
+    <Button
+        android:id="@+id/activity_comment_post_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_post"
+        android:layout_alignBaseline="@id/activity_comments_inputbox"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/activity_comments_post_btn_side"
+        android:onClick="onPostBtnClick"/>
+
+    <ListView
+        android:layout_above="@+id/activity_comments_inputbox"
+        android:id="@+id/activity_comments_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_comments_listview_side"
+        android:layout_marginRight="@dimen/activity_comments_listview_side"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        />
+</RelativeLayout>
