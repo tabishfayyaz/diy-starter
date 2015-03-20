@@ -23,12 +23,13 @@ Make sure to have basic familiarity on how to use the open-source libraries link
 
 The project was built with Android Studio and studying the architecture and code of the project you'll be able to learn:
 
+- Consuming a web API and displaying images fetched over the network in a List View
 - Moving network request outside of the Activity lifecyle.
 - Clear and safe communication between multiple independent component i.e. configuration changes (rotation, phone-call etc.) will not crash the app. We don't take a defensive programming approach or null checks spread out everywhere in the code. If you have done anything with Fragments you know what I am talking about.
 - All Activities (or any similar component for that matter) registers on the Event Bus and use it to communicate.
 - When you want to load data you post an event on the Event Bus which will cause the Data Service to start the network request.
 - When network request finishes, Data Service will post the result back on the Event Bus for any listening Activites to handle.
-- The UI is completely agnostic to who is the data provider meaning you can plug-play any type of UI. The source of data can be an in-memory cache or local database that syncs with a REST API. 
+- The UI is completely agnostic to who is the data provider meaning you can plug-play any type of UI. The source of data can be an in-memory cache or local database that syncs with a web API. 
 
 #### Questions? 
 
