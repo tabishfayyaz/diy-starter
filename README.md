@@ -1,13 +1,13 @@
 # DIYStarter
 
-An android demo app for how to build a durable REST Client using: 
+A durable Android REST based client built on the principle of Less Code, Better Quality using:
 
- - [DIY.org REST API] (http://docs.diy.org/)
  - [Retrofit] (http://square.github.io/retrofit/)
  - [EventBus] (https://github.com/greenrobot/EventBus)
  - [Picasso] (http://square.github.io/picasso/)
  - [GSon] (https://code.google.com/p/google-gson/) - comes packaged within Retrofit
  - [OkHttp] (http://square.github.io/okhttp/)
+ - [DIY.org REST API] (http://docs.diy.org/)
 
 ### Study Guide
 
