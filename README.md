@@ -9,6 +9,9 @@ A durable Android REST based client built on the principle of Less Code, Better 
  - [OkHttp] (http://square.github.io/okhttp/)
  - [DIY.org REST API] (http://docs.diy.org/)
 
+
+This is a starter application so the UI is primitive with basic error handling. The intent is not to show UI/UX excellency but code design and best practices
+
 ### Architecture
 
 The project was built with Android Studio and studying the architecture and code of the project you'll be able to learn:
@@ -25,10 +28,10 @@ The project was built with Android Studio and studying the architecture and code
 
 Make sure to have basic familiarity on how to use the open-source libraries linked above. Given you done that studying the project in following order will probably be more helpful:
 
-1. [DIYApi.java] (https://github.com/tabishfayyaz/diy-starter/blob/master/DIYStarter/app/src/main/java/tabishfayyaz/apps/samples/diystarter/rest/DIYApi.java)
-2. [StarterApp.java] (https://github.com/tabishfayyaz/diy-starter/blob/master/DIYStarter/app/src/main/java/tabishfayyaz/apps/samples/diystarter/StarterApp.java)
-3. [DataService.java] (https://github.com/tabishfayyaz/diy-starter/blob/master/DIYStarter/app/src/main/java/tabishfayyaz/apps/samples/diystarter/manager/DataService.java)
-4. [SelectionActivity.java] (https://github.com/tabishfayyaz/diy-starter/blob/master/DIYStarter/app/src/main/java/tabishfayyaz/apps/samples/diystarter/ui/SelectionActivity.java)
+1. [DIYApi.java] (https://github.com/tabishfayyaz/diy-starter/blob/master/DIYStarter/app/src/main/java/tabishfayyaz/apps/samples/diystarter/rest/DIYApi.java) communicates with the REST API utilizing RetroFit
+2. [StarterApp.java] (https://github.com/tabishfayyaz/diy-starter/blob/master/DIYStarter/app/src/main/java/tabishfayyaz/apps/samples/diystarter/StarterApp.java) is where Data Service is initialized and registered on the Event Bus
+3. [DataService.java] (https://github.com/tabishfayyaz/diy-starter/blob/master/DIYStarter/app/src/main/java/tabishfayyaz/apps/samples/diystarter/manager/DataService.java) is the pipe through which data travels back & forth between the UI layer and REST layer. The UI is completely agnostic to who is the data provider meaning you can plug-play any type of UI without changing anything in other packages
+4. [SelectionActivity.java] (https://github.com/tabishfayyaz/diy-starter/blob/master/DIYStarter/app/src/main/java/tabishfayyaz/apps/samples/diystarter/ui/SelectionActivity.java) is the first view of the app and lets the user choose between seeing his projects or his followers projects
 5. Continue studying the other Activities
 
 #### Questions? 
